@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Island+Moments&family=Satisfy&display=swap');
+
+/* 
+****Limpar formatações padrão**** 
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/* 
+***********************Layout**************************
+*/
 header{
     width: 100%;
     height: 100vh;
@@ -11,6 +22,20 @@ header{
     display: flex;
     justify-content: center;
 }
+
+/*
+**************Formatacoes em geral****************
+*/
+
+.navegacao{
+    font-size: 5em;
+    margin: 5px 90px 0 0;
+    text-decoration: none;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Anton', sans-serif;
+    position: relative;
+}
+
 header img{
     position: fixed;
     top: 0;
@@ -18,20 +43,9 @@ header img{
     object-fit: cover;
     width: 100%;
 }
-nav{
-    position: relative;
-}
-a{
-    font-size: 5em;
-}
-.nave{
-    margin: 5px 90px 0 0;
-    text-decoration: none;
-    color: hsl(0, 100%, 100%);
-    font-family: 'Anton', sans-serif;
-}
-.nave:hover{
-    /* background-color: hsl(0, 0%, 30%); */
+
+.navegacao:hover{
     color: hsl(240, 100%, 50%);
     transition: 1s;
 }
+
